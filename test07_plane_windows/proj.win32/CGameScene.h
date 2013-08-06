@@ -18,8 +18,11 @@ public:
 	static CCScene * scene();
 	CREATE_FUNC(CCGameScene);
 
+	void gameLogic(float t);
+
 private:
 	CCSprite * m_pBackGround;
+	CCSprite * m_pBackGround2;
 };
 
 #endif //__CCGAMESCENE_SCENE_H__
