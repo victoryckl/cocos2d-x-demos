@@ -46,6 +46,7 @@ END
 //
 
 IDB_PNG1                PNG                     "E:\\cocos2d-x\\cocos2d-x-demos\\test07_plane_windows\\Resources\\background4.png"
+IDB_PNG2                PNG                     "E:\\cocos2d-x\\cocos2d-x-demos\\test07_plane_windows\\Resources\\player.png"
 #endif    // Chinese (Simplified, PRC) resources
 /////////////////////////////////////////////////////////////////////////////
 

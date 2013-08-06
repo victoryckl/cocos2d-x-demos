@@ -30,6 +30,9 @@
     <None Include="..\Resources\background4.png">
       <Filter>resource</Filter>
     </None>
+    <None Include="..\Resources\player.png">
+      <Filter>resource</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="test07_plane_windows.rc">
@@ -52,6 +55,9 @@
     <ClInclude Include="CGameScene.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="CPlane.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -64,6 +70,9 @@
       <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="CGameScene.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlane.cpp">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>
