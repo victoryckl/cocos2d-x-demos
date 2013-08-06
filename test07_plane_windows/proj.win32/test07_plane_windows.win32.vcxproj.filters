@@ -2,34 +2,34 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="source">
-      <UniqueIdentifier>{86c25b4a-aa52-4548-82b2-cf3beabe2e47}</UniqueIdentifier>
+      <UniqueIdentifier>{f3d0ebe5-dfc0-4f80-920f-4fec6ec15df5}</UniqueIdentifier>
       <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
     </Filter>
     <Filter Include="include">
-      <UniqueIdentifier>{c63b71b9-3d4b-40a7-9f48-0aabe43dc0bd}</UniqueIdentifier>
+      <UniqueIdentifier>{cef2e9c6-9275-4cd4-bf00-0aee7e2d925c}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
     </Filter>
     <Filter Include="resource">
-      <UniqueIdentifier>{e2a61a15-e986-4882-87ad-0cd6a7d0adc5}</UniqueIdentifier>
+      <UniqueIdentifier>{013eca15-5305-4c39-8287-b2d3907ea4ff}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;png;manifest</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\test07_plane_windows.ico">
+    <None Include="res\test07_plane_windows.ico">
       <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\CloseSelected.png">
+    </None>
+    <None Include="..\Resources\CloseSelected.png">
       <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\CloseNormal.png">
+    </None>
+    <None Include="..\Resources\CloseNormal.png">
       <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\HelloWorld.png">
+    </None>
+    <None Include="..\Resources\HelloWorld.png">
       <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\background4.png">
+    </None>
+    <None Include="..\Resources\background4.png">
       <Filter>resource</Filter>
-    </Image>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="test07_plane_windows.rc">
@@ -49,7 +49,7 @@
     <ClInclude Include="..\Classes\HelloWorldScene.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="CCGameScene.h">
+    <ClInclude Include="CGameScene.h">
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
@@ -63,7 +63,7 @@
     <ClCompile Include="..\Classes\HelloWorldScene.cpp">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="CCGameScene.cpp">
+    <ClCompile Include="CGameScene.cpp">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>

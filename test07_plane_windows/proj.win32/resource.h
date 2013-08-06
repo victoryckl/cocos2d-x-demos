@@ -1,6 +1,6 @@
 //{{NO_DEPENDENCIES}}
-// Microsoft Visual C++ 生成的包含文件。
-// 供 test07_plane_windows.rc 使用
+// Microsoft Visual C++ generated include file.
+// Used by test07_plane_windows.rc
 //
 #define IDS_PROJNAME                    100
 #define IDR_TEST07_PLANE_WINDOWS        100

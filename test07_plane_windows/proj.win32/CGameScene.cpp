@@ -1,4 +1,4 @@
-#include "CCGameScene.h"
+#include "CGameScene.h"
 
 
 CCGameScene::CCGameScene(void)
@@ -12,25 +12,20 @@ CCGameScene::~CCGameScene(void)
 
 bool CCGameScene::init() {
 	bool sRet = false;
-	do
-	{
+	do {
 		CC_BREAK_IF(!CCLayer::init());
 		m_pBackGround = CCSprite::create("background4.png");
 		addChild(m_pBackGround);
-		m_pBackGround->setAnchorPoint(ccp(0, 0));
-		m_pBackGround->setPosition(ccp(0, 0));
-
-		schedule(schedule_selector(CCGameScene::gameLogic), 0.1f);
-
+		m_pBackGround->setAnchorPoint(CCPointZero);
+		m_pBackGround->setPosition(CCPointZero);
 		sRet = true;
-	} while (0);
+	}while(0);
 	return sRet;
 }
 
 CCScene * CCGameScene::scene() {
 	CCScene * scene = NULL;
-	do
-	{
+	do {
 		scene = CCScene::create();
 		CC_BREAK_IF(!scene);
 		CCGameScene * game = CCGameScene::create();
@@ -38,8 +33,4 @@ CCScene * CCGameScene::scene() {
 		scene->addChild(game);
 	}while(0);
 	return scene;
-}
-
-void CCGameScene::gameLogic(float t) {
-	m_pBackGround->setPositionY(m_pBackGround->getPositionY() - 5);
 }

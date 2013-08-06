@@ -1,27 +1,25 @@
-#ifndef __GAME_SCENE_H__
-#define __GAME_SCENE_H__
+#ifndef __CCGAMESCENE_SCENE_H__
+#define __CCGAMESCENE_SCENE_H__
 
 #include "cocos2d.h"
+
 #include "SimpleAudioEngine.h"
 
 USING_NS_CC;
 
-class CCGameScene :
-	public cocos2d::CCLayer
+class CCGameScene : public CCLayer
 {
 public:
 	CCGameScene(void);
 	~CCGameScene(void);
 
 public:
-	CCSprite * m_pBackGround;
-
-public:
 	virtual bool init();
 	static CCScene * scene();
 	CREATE_FUNC(CCGameScene);
 
-	void gameLogic(float t);
+private:
+	CCSprite * m_pBackGround;
 };
 
-#endif //__GAME_SCENE_H__
+#endif //__CCGAMESCENE_SCENE_H__
