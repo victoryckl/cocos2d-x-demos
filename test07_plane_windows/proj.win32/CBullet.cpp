@@ -8,6 +8,8 @@ CCBullet::CCBullet(void)
 CCBullet::~CCBullet(void)
 {
 	m_pAllBullet->release();
+	m_pAllBullet = NULL;
+	m_pBulletSprite = NULL;
 }
 
 bool CCBullet::init() {

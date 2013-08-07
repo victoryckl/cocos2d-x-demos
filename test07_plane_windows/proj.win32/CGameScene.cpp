@@ -59,11 +59,27 @@ void CCGameScene::gameLogic(float t) {
 }
 
 bool CCGameScene::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent) {
-	m_pPlane->moveTo(pTouch->getLocation());
-	return true;
+	//m_pPlane->moveTo(pTouch->getLocation());
+
+	CCSprite * plane = (CCSprite *)m_pPlane->sharedPlane()->getChildByTag(747);
+	CCSize s = plane->getContentSize();
+	CCRect planeRect = CCRectMake(
+		plane->getPositionX() - plane->getAnchorPoint().x*s.width, 
+		plane->getPositionY() - plane->getAnchorPoint().y*s.height,
+		plane->getContentSize().width, plane->getContentSize().height);
+// 	CCLog("plane:(%.2f,%.2f),(%.2f,%.2f)", 
+// 		plane->getPositionX(), plane->getPositionY(),
+// 		plane->getContentSize().width, plane->getContentSize().height);
+// 	CCLog("touch:%.2f,%.2f", pTouch->getLocation().x, pTouch->getLocation().y);
+	if (planeRect.containsPoint(pTouch->getLocation()) ) {
+		return true;
+	}
+	return false;
 }
 
 void CCGameScene::ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent) {
+	m_pPlane->moveTo(pTouch->getLocation());
+//	CCLog("touch:%.2f,%.2f", pTouch->getLocation().x, pTouch->getLocation().y);
 }
 
 void CCGameScene::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent) {
