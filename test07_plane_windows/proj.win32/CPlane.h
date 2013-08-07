@@ -18,6 +18,10 @@ public:
 	virtual bool init();
 	CREATE_FUNC(CCPlane);
 	void moveTo(CCPoint sp);
+	static CCPlane * sharedPlane();
+
+private:
+	static CCPlane * m_plane;
 };
 
 #endif //__CCPLANE_SCENE_H__

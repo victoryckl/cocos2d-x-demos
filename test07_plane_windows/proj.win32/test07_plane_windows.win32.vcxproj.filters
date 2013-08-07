@@ -33,6 +33,9 @@
     <None Include="..\Resources\player.png">
       <Filter>resource</Filter>
     </None>
+    <None Include="..\Resources\bullet3.png">
+      <Filter>resource</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="test07_plane_windows.rc">

@@ -26,6 +26,9 @@ bool CCGameScene::init() {
 		
 		m_pPlane = CCPlane::create();
 		addChild(m_pPlane);
+
+		m_pBullet = CCBullet::create();
+		addChild(m_pBullet);
 		
 		schedule(schedule_selector(CCGameScene::gameLogic), 0.1f);
 

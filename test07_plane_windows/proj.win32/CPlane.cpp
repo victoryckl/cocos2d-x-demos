@@ -1,5 +1,6 @@
 #include "CPlane.h"
 
+CCPlane * CCPlane::m_plane = NULL;
 
 CCPlane::CCPlane(void)
 {
@@ -26,6 +27,8 @@ bool CCPlane::init() {
 		}
 		CCAnimate * anim = CCAnimate::create(animation);
 		spPlane->runAction(CCRepeatForever::create(anim));
+
+		m_plane = this;
 		sRet = true;
 	}while(0);
 	return sRet;
@@ -35,4 +38,8 @@ void CCPlane::moveTo(CCPoint p) {
 	CCMoveTo * move = CCMoveTo::create(0.5, p);
 	CCSprite * sp = (CCSprite*)getChildByTag(747);
 	sp->runAction(move);
+}
+
+CCPlane * CCPlane::sharedPlane() {
+	return m_plane;
 }

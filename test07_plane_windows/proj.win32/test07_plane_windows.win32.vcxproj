@@ -123,6 +123,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="..\Resources\background4.png" />
+    <None Include="..\Resources\bullet3.png" />
     <None Include="..\Resources\CloseNormal.png" />
     <None Include="..\Resources\CloseSelected.png" />
     <None Include="..\Resources\HelloWorld.png" />

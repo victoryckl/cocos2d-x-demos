@@ -14,9 +14,15 @@ public:
 	CCBullet(void);
 	~CCBullet(void);
 public:
-	CCArray * m_pAllBullet;
 	virtual bool init();
 	CREATE_FUNC(CCBullet);
+
+	void addBullet(float t);
+	void moveBullet(float t);
+
+private:
+	CCArray * m_pAllBullet;
+	CCSpriteBatchNode * m_pBulletSprite;
 };
 
 #endif //__BULLET_SCENE_H__

@@ -5,6 +5,7 @@
 
 #include "SimpleAudioEngine.h"
 #include "CPlane.h"
+#include "CBullet.h"
 
 USING_NS_CC;
 
@@ -30,6 +31,7 @@ private:
 	CCSprite * m_pBackGround;
 	CCSprite * m_pBackGround2;
 	CCPlane * m_pPlane;
+	CCBullet * m_pBullet;
 };
 
 #endif //__CCGAMESCENE_SCENE_H__
