@@ -13,7 +13,7 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// Chinese (Simplified, PRC) resources
+// 中文(简体，中国) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
 LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
@@ -42,17 +42,23 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
+// Bitmap
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
 // PNG
 //
 
-IDB_PNG1                PNG                     "E:\\cocos2d-x\\cocos2d-x-demos\\test07_plane_windows\\Resources\\background4.png"
-IDB_PNG2                PNG                     "E:\\cocos2d-x\\cocos2d-x-demos\\test07_plane_windows\\Resources\\player.png"
-#endif    // Chinese (Simplified, PRC) resources
+IDB_PNG3                PNG                     "..\\Resources\\background4.png"
+IDB_PNG4                PNG                     "..\\Resources\\player.png"
+#endif    // 中文(简体，中国) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
 /////////////////////////////////////////////////////////////////////////////
-// English (United States) resources
+// 英语(美国) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
@@ -118,7 +124,7 @@ BEGIN
     END
 END
 
-#endif    // English (United States) resources
+#endif    // 英语(美国) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
