@@ -24,7 +24,12 @@ bool CCGameScene::init() {
 		m_pBackGround2->setAnchorPoint(CCPointZero);
 		m_pBackGround2->setPosition(ccp(0, 680));
 		
+		m_pPlane = CCPlane::create();
+		addChild(m_pPlane);
+		
 		schedule(schedule_selector(CCGameScene::gameLogic), 0.1f);
+
+		setTouchEnabled(true);
 		sRet = true;
 	}while(0);
 	return sRet;
@@ -48,4 +53,19 @@ void CCGameScene::gameLogic(float t) {
 	if (m_pBackGround2->getPositionY() <= 0) {
 		m_pBackGround->setPositionY(0);
 	}
+}
+
+bool CCGameScene::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent) {
+	m_pPlane->moveTo(pTouch->getLocation());
+	return true;
+}
+
+void CCGameScene::ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent) {
+}
+
+void CCGameScene::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent) {
+}
+
+void CCGameScene::registerWithTouchDispatcher(void) {
+	CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, 0, true);
 }

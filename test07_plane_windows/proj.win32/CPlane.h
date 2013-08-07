@@ -16,7 +16,8 @@ public:
 
 public:
 	virtual bool init();
-	
+	CREATE_FUNC(CCPlane);
+	void moveTo(CCPoint sp);
 };
 
 #endif //__CCPLANE_SCENE_H__

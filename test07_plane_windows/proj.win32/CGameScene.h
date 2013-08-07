@@ -4,6 +4,7 @@
 #include "cocos2d.h"
 
 #include "SimpleAudioEngine.h"
+#include "CPlane.h"
 
 USING_NS_CC;
 
@@ -20,9 +21,15 @@ public:
 
 	void gameLogic(float t);
 
+	virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
+    virtual void ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent);
+    virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
+	virtual void registerWithTouchDispatcher(void);
+
 private:
 	CCSprite * m_pBackGround;
 	CCSprite * m_pBackGround2;
+	CCPlane * m_pPlane;
 };
 
 #endif //__CCGAMESCENE_SCENE_H__

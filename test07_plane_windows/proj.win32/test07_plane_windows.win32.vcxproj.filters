@@ -58,6 +58,9 @@
     <ClInclude Include="CPlane.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="CBullet.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -73,6 +76,9 @@
       <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="CPlane.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="CBullet.cpp">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>
