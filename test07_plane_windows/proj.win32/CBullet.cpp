@@ -22,7 +22,7 @@ bool CCBullet::init() {
 		m_pBulletSprite = CCSpriteBatchNode::create("bullet3.png");
 		addChild(m_pBulletSprite);
 
-		schedule(schedule_selector(CCBullet::addBullet), 0.3f);
+		schedule(schedule_selector(CCBullet::addBullet), 0.2f);
 		schedule(schedule_selector(CCBullet::moveBullet), 0.1f);
 
 		sRet = true;//±ØÐë·µ»Øtrue
@@ -40,7 +40,7 @@ void CCBullet::addBullet(float t) {
 void CCBullet::moveBullet(float t) {
 	for (unsigned int i=0; i<m_pAllBullet->count(); i++) {
 		CCSprite * bullet = (CCSprite *)m_pAllBullet->objectAtIndex(i);
-		bullet->setPositionY(bullet->getPositionY()+10);
+		bullet->setPositionY(bullet->getPositionY()+15);
 
 		if (bullet->getPositionY() > 480) {
 			m_pAllBullet->removeObjectAtIndex(i);

@@ -62,10 +62,9 @@ bool CCGameScene::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent) {
 	//m_pPlane->moveTo(pTouch->getLocation());
 
 	CCSprite * plane = (CCSprite *)m_pPlane->sharedPlane()->getChildByTag(747);
-	CCSize s = plane->getContentSize();
 	CCRect planeRect = CCRectMake(
-		plane->getPositionX() - plane->getAnchorPoint().x*s.width, 
-		plane->getPositionY() - plane->getAnchorPoint().y*s.height,
+		plane->getPositionX() - plane->getAnchorPointInPoints().x, 
+		plane->getPositionY() - plane->getAnchorPointInPoints().y,
 		plane->getContentSize().width, plane->getContentSize().height);
 // 	CCLog("plane:(%.2f,%.2f),(%.2f,%.2f)", 
 // 		plane->getPositionX(), plane->getPositionY(),
