@@ -5,21 +5,26 @@
 #include "SimpleAudioEngine.h"
 #include "CGameScene.h"
 
+#include "LifeCircleLogger.h"
+
 using namespace CocosDenshion;
 
 USING_NS_CC;
 
 AppDelegate::AppDelegate()
 {
+	LOG_FUNCTION_LIFE
 }
 
 AppDelegate::~AppDelegate()
 {
+	LOG_FUNCTION_LIFE
     SimpleAudioEngine::end();
 }
 
 bool AppDelegate::applicationDidFinishLaunching()
 {
+	LOG_FUNCTION_LIFE
     // initialize director
     CCDirector *pDirector = CCDirector::sharedDirector();
     pDirector->setOpenGLView(CCEGLView::sharedOpenGLView());
@@ -42,6 +47,7 @@ bool AppDelegate::applicationDidFinishLaunching()
 // This function will be called when the app is inactive. When comes a phone call,it's be invoked too
 void AppDelegate::applicationDidEnterBackground()
 {
+	LOG_FUNCTION_LIFE
     CCDirector::sharedDirector()->stopAnimation();
 
     SimpleAudioEngine::sharedEngine()->pauseBackgroundMusic();
@@ -50,6 +56,7 @@ void AppDelegate::applicationDidEnterBackground()
 // this function will be called when the app is active again
 void AppDelegate::applicationWillEnterForeground()
 {
+	LOG_FUNCTION_LIFE
     CCDirector::sharedDirector()->startAnimation();
 
     SimpleAudioEngine::sharedEngine()->resumeBackgroundMusic();
