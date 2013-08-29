@@ -6,6 +6,7 @@
 #include "CGameScene.h"
 
 #include "LifeCircleLogger.h"
+#include "LifeCircleMutexLocker.h"
 
 using namespace CocosDenshion;
 
