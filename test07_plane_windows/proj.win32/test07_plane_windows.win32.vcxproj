@@ -140,6 +140,7 @@
     <ClInclude Include="CGameScene.h" />
     <ClInclude Include="CPlane.h" />
     <ClInclude Include="LifeCircleLogger.h" />
+    <ClInclude Include="LifeCircleMutexLocker.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>

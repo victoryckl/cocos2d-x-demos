@@ -67,6 +67,9 @@
     <ClInclude Include="LifeCircleLogger.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="LifeCircleMutexLocker.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
